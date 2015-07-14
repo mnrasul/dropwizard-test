@@ -1,0 +1,15 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000
+      bindHost: 127.0.0.1 # only bind to loopback
+  adminConnectors:
+    - type: http
+      port: 9001
+
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: INFO
+  appenders:
+    - type: console
